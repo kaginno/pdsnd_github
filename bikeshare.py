@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import json
 
+
+
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -251,7 +253,7 @@ def user_stats(df):
     print('-'*40)
 
 def display_raw_data(df):
-    """ Your docstring here """
+    """ Get input from user and loop through the Dataframe to display 5 rows displayed as JSON till user types 'NO' """
     i = 0
     raw = input('\nWould you like to see 5 rows of raw data? yes or no:\n').lower().strip() # TO DO: convert the user input to lower case using lower() function
     pd.set_option('display.max_columns',200)

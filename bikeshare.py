@@ -267,7 +267,7 @@ def display_raw_data(df):
             
             i += 5
         else:
-            raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower()
+            raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower().strip()
 
 def main():
     
